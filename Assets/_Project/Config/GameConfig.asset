@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44c6dd8ae2ee1da4db653e7719b669f5, type: 3}
   m_Name: GameConfig
   m_EditorClassIdentifier: 
-  maxLevel: 3
+  maxLevel: 1
   startLoopLevel: 1
   enableDebugView: 1
   targetFrameRate: 60

@@ -25,6 +25,11 @@ public class Constant
     public const string GAMEOBJECT_SHOW = "GAMEOBJECT_SHOW";
     public const string PERCENT_WIN_GIFT = "PERCENT_WIN_GIFT";
 
+    //Gameplay
+    public const string BUILDING_AREA_TAG = "BuildingArea";
+    public const string NPC_TAG = "NPC";
+    public const string PLAYER_TAG = "Player";
+
     #region Group attribute
 
     public const string SO_Event = "SO_Event";

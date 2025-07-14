@@ -5,7 +5,8 @@ using VirtueSky.Component;
 
 public class CharacterIdleCarryState : State
 {
-    public CharacterIdleCarryState(GameObject owner, StateMachine stateMachine, HandleAnimancerComponent animancerComponent, ClipTransition animationClip)
+    public CharacterIdleCarryState(GameObject owner, StateMachine stateMachine,
+        HandleAnimancerComponent animancerComponent, AnimationClip animationClip)
         : base(owner, stateMachine, animancerComponent, animationClip)
     {
     }

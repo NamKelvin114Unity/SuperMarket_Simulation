@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 703624426702618636}
+  - component: {fileID: 7584912070252634769}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -27,11 +28,33 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7305797637368357155}
   m_Father: {fileID: 192568554938642452}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &7584912070252634769
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4833708317998895973}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 64a980301a9beaa4cb7d73ae720a1750, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5877561647526410911
 GameObject:
   m_ObjectHideFlags: 0
@@ -43,6 +66,8 @@ GameObject:
   - component: {fileID: 192568554938642452}
   - component: {fileID: 313206464254092023}
   - component: {fileID: 2987685576508241494}
+  - component: {fileID: 3200185406220461274}
+  - component: {fileID: 5069320850724998925}
   m_Layer: 0
   m_Name: Tomato
   m_TagString: Untagged
@@ -78,10 +103,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30f13e59e9827ce4fad83a0416eb43d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isCollectable: 0
+  itemSize: {fileID: 11400000, guid: 6206a3547dec6eb468b53ce40db1f945, type: 2}
+  itemResources: []
+  isCollectable: 1
+  priceVariable: {fileID: 11400000, guid: b99824d43a5def94db9e4c445e68f303, type: 2}
   itemMoveTimeVariable: {fileID: 11400000, guid: 24177292054f13d448e518630ae05249,
     type: 2}
   itemType: 1
+  isUseAnimationMoveComplete: 1
+  handleAnimancerComponent: {fileID: 5069320850724998925}
+  moveCompleteAnimationClip: {fileID: 7400000, guid: a91cbcebe184eb24889a015f89db197f,
+    type: 2}
 --- !u!65 &2987685576508241494
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -103,6 +135,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.39660043, y: 0.33438534, z: 0.3763737}
   m_Center: {x: 0.0014881194, y: 0.011615902, z: 0.0037023723}
+--- !u!114 &3200185406220461274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5877561647526410911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad50f81b1d25c441943c37a89ba23f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Animator: {fileID: 7584912070252634769}
+  _ActionOnDisable: 0
+--- !u!114 &5069320850724998925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5877561647526410911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b50203cff2b74e849a2fe7c6bb333776, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animancerComponent: {fileID: 3200185406220461274}
 --- !u!1001 &7127457971764184776
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 1297037744943734259, guid: e8ccc9d0d6aa9cb4bafc49c610e70e43,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.58
+      value: -10.59
       objectReference: {fileID: 0}
     - target: {fileID: 1297037744943734259, guid: e8ccc9d0d6aa9cb4bafc49c610e70e43,
         type: 3}
@@ -21,7 +21,7 @@ PrefabInstance:
     - target: {fileID: 1297037744943734259, guid: e8ccc9d0d6aa9cb4bafc49c610e70e43,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.97
+      value: -0.57
       objectReference: {fileID: 0}
     - target: {fileID: 1297037744943734259, guid: e8ccc9d0d6aa9cb4bafc49c610e70e43,
         type: 3}
@@ -78,9 +78,64 @@ PrefabInstance:
       propertyPath: m_Name
       value: TomatoFarmBuildingArea Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4873403131712665184, guid: e8ccc9d0d6aa9cb4bafc49c610e70e43,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 3.4598675
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873403131712665184, guid: e8ccc9d0d6aa9cb4bafc49c610e70e43,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 2.9005952
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873403131712665184, guid: e8ccc9d0d6aa9cb4bafc49c610e70e43,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.39665985
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873403131712665184, guid: e8ccc9d0d6aa9cb4bafc49c610e70e43,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.28720117
+      objectReference: {fileID: 0}
+    - target: {fileID: 5554903837388812923, guid: e8ccc9d0d6aa9cb4bafc49c610e70e43,
+        type: 3}
+      propertyPath: buildingType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5799062758255273597, guid: e8ccc9d0d6aa9cb4bafc49c610e70e43,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6051550857094013437, guid: e8ccc9d0d6aa9cb4bafc49c610e70e43,
         type: 3}
       propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414402824309754048, guid: e8ccc9d0d6aa9cb4bafc49c610e70e43,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8699257
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414402824309754048, guid: e8ccc9d0d6aa9cb4bafc49c610e70e43,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.49318287
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414402824309754048, guid: e8ccc9d0d6aa9cb4bafc49c610e70e43,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414402824309754048, guid: e8ccc9d0d6aa9cb4bafc49c610e70e43,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414402824309754048, guid: e8ccc9d0d6aa9cb4bafc49c610e70e43,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6562181260451201671, guid: e8ccc9d0d6aa9cb4bafc49c610e70e43,
@@ -91,22 +146,55 @@ PrefabInstance:
     - target: {fileID: 7296036275115001761, guid: e8ccc9d0d6aa9cb4bafc49c610e70e43,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9143140743900114942, guid: e8ccc9d0d6aa9cb4bafc49c610e70e43,
         type: 3}
       propertyPath: m_DynamicOccludee
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3474763969856039798, guid: e8ccc9d0d6aa9cb4bafc49c610e70e43, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7081066157944816946, guid: e8ccc9d0d6aa9cb4bafc49c610e70e43,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 6830450707790995704}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6459246917229856899, guid: e8ccc9d0d6aa9cb4bafc49c610e70e43,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6563578155950689408}
   m_SourcePrefab: {fileID: 100100000, guid: e8ccc9d0d6aa9cb4bafc49c610e70e43, type: 3}
+--- !u!1 &4734409902541704500 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6459246917229856899, guid: e8ccc9d0d6aa9cb4bafc49c610e70e43,
+    type: 3}
+  m_PrefabInstance: {fileID: 1736096294408209847}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &6563578155950689408
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4734409902541704500}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 52b2e81f4d935b349a6a616709d628b0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &8814347418713030789 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7081066157944816946, guid: e8ccc9d0d6aa9cb4bafc49c610e70e43,
@@ -191,13 +279,19 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6047034630796157168, guid: 188bde65fa716714aa561c0bbf0d1000,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6784460479555550551, guid: 188bde65fa716714aa561c0bbf0d1000,
         type: 3}
       propertyPath: m_Name
       value: TomatoFarm
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7902037178437194774, guid: 188bde65fa716714aa561c0bbf0d1000, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6784460479555550551, guid: 188bde65fa716714aa561c0bbf0d1000,

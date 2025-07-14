@@ -80,6 +80,11 @@ public class CoinSystem : MonoBehaviour
     public static void AddCoin(int value, Vector3 posGenerateCoin = default) =>
         OnAddCoinEvent?.Invoke(value, posGenerateCoin);
 
+    public static void AddCoinStatic(int value)
+    {
+        CurrentCoin += value;
+    }
+
     public static void MinusCoin(int value) => OnMinusCoinEvent?.Invoke(value);
 
     public static void SetCoin(int value, Vector3 posGenerateCoin = default) =>

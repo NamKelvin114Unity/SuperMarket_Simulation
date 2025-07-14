@@ -7,10 +7,11 @@ public abstract class State
 {
     protected GameObject owner;
     protected HandleAnimancerComponent animancerComponent;
-    protected ClipTransition animationClip;
+    protected AnimationClip animationClip;
     protected StateMachine stateMachine;
 
-    public State(GameObject owner, StateMachine stateMachine, HandleAnimancerComponent animancerComponent, ClipTransition animationClip)
+    public State(GameObject owner, StateMachine stateMachine, HandleAnimancerComponent animancerComponent,
+        AnimationClip animationClip)
     {
         this.owner = owner;
         this.stateMachine = stateMachine;
@@ -20,7 +21,7 @@ public abstract class State
 
     public virtual void Enter(Action complete)
     {
-        animancerComponent.PlayAnim(animationClip, complete);
+        animancerComponent.PlayAnim(animationClip, complete, _durationFade: 0);
     }
 
     public virtual void Exit()

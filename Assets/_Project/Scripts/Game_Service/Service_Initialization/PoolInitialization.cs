@@ -8,6 +8,7 @@ namespace TheBeginning.Services
     {
         public override void Initialization()
         {
+            PoolCustom.InitPoolCustom();
             Pool.InitPool();
         }
     }

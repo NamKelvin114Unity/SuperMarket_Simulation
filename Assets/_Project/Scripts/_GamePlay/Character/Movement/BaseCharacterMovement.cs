@@ -1,5 +1,4 @@
 using UnityEngine;
-using VirtueSky.Events;
 using VirtueSky.Inspector;
 using VirtueSky.Variables;
 
@@ -9,10 +8,6 @@ public abstract class BaseCharacterMovement : MonoBehaviour
     [SerializeField] protected FloatVariable characterMoveSpeedVariable;
     [SerializeField] protected FloatVariable minDistanceMovementVariable;
     [SerializeField] protected FloatVariable characterRotateSpeedVariable;
-    [SerializeField] protected EventNoParam onCharacterMoveEvent;
-    [SerializeField] protected EventNoParam onCharacterMoveCarryEvent;
-    [SerializeField] protected EventNoParam onCharacterIdleEvent;
-    [SerializeField] protected EventNoParam onCharacterIdleCarryEvent;
     [SerializeField] protected CharacterStateVariable characterStateVariable;
     [SerializeField] protected ECharacterMovement characterMovement;
 }

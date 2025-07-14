@@ -101,7 +101,7 @@ public class CoinGenerate : BaseMono
         for (int i = 0; i < numberCoin; i++)
         {
             await UniTask.Delay(Random.Range(0, delay));
-            GameObject coin = coinPrefab.Spawn(holder);
+            GameObject coin = coinPrefab.SpawnCustom(holder);
             coin.transform.localScale = Vector3.one * scale;
             coinsActive.Add(coin);
             coin.transform.position = from;
@@ -109,7 +109,7 @@ public class CoinGenerate : BaseMono
             MoveToTarget(coin, () =>
             {
                 coinsActive.Remove(coin);
-                coin.DeSpawn();
+                coin.DeSpawnCustom();
                 if (!isScaleIconTo)
                 {
                     isScaleIconTo = true;
@@ -134,12 +134,11 @@ public class CoinGenerate : BaseMono
             .DOMove(coin.transform.position + (Vector3)Random.insideUnitCircle * offsetNear,
                 durationNear)
             .SetEase(easeNear)
-            .OnComplete(
-                () =>
-                {
-                    coin.transform.DOMove(to.transform.position, durationTarget).SetEase(easeTarget)
-                        .OnComplete(completed);
-                });
+            .OnComplete(() =>
+            {
+                coin.transform.DOMove(to.transform.position, durationTarget).SetEase(easeTarget)
+                    .OnComplete(completed);
+            });
     }
 
     public void SetNumberCoin(int _numberCoin)

@@ -1,11 +1,11 @@
 using System;
-using Animancer;
 using UnityEngine;
 using VirtueSky.Component;
 
 public class CharacterMoveState : State
 {
-    public CharacterMoveState(GameObject owner, StateMachine stateMachine, HandleAnimancerComponent animancerComponent, ClipTransition animationClip)
+    public CharacterMoveState(GameObject owner, StateMachine stateMachine, HandleAnimancerComponent animancerComponent,
+        AnimationClip animationClip)
         : base(owner, stateMachine, animancerComponent, animationClip)
     {
     }

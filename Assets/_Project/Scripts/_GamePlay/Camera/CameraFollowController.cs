@@ -9,6 +9,7 @@ public class CameraFollowController : MonoBehaviour
 
     [SerializeField] private Vector3Variable targetPositionVariable;
 
+
     private void LateUpdate()
     {
         transform.position = targetPositionVariable.Value + offsetCameraFollowVariable.Value;

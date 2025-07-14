@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5216721647a15454ea7dccdfd57fafb1, type: 3}
+  m_Name: tomato_resource_seller_data
+  m_EditorClassIdentifier: 
+  maxValueResourceVariable: 9
+  icon: {fileID: 21300000, guid: 4593542c6435a470d94f08dbc15fab3c, type: 3}
+  arrangeData: {fileID: 11400000, guid: 2bb0f6cab70f6f443b76449581976b2e, type: 2}
+  itemTypeSellList: 01000000
+  currentCollectData: []

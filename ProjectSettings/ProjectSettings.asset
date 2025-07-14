@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: BaseGameUnity
-  productName: TheBeginning
+  productName: SuperMarketSimulation
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -165,7 +165,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   androidMinAspectRatio: 1
   applicationIdentifier:
-    Android: com.thebeginning.test
+    Android: com.SuperMarketSimulation.Demo
     Standalone: com.thebeginning.test
   buildNumber:
     Standalone: 0
@@ -174,7 +174,7 @@ PlayerSettings:
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1
   AndroidBundleVersionCode: 1
-  AndroidMinSdkVersion: 23
+  AndroidMinSdkVersion: 26
   AndroidTargetSdkVersion: 34
   AndroidPreferredInstallLocation: 1
   aotOptions: 
@@ -843,7 +843,7 @@ PlayerSettings:
   webWasm2023: 0
   webEnableSubmoduleStrippingCompatibility: 0
   scriptingDefineSymbols:
-    Android: PRIME_TWEEN_DOTWEEN_ADAPTER;UNITASK_ADDRESSABLE_SUPPORT;VIRTUESKY_SKELETON;VIRTUESKY_NOTIFICATION;UDS_USE_ASYNC_METHODS;VIRTUESKY_ANIMANCER
+    Android: PRIME_TWEEN_DOTWEEN_ADAPTER;UNITASK_ADDRESSABLE_SUPPORT;VIRTUESKY_SKELETON;VIRTUESKY_NOTIFICATION;UDS_USE_ASYNC_METHODS;VIRTUESKY_ANIMANCER;PRIME_TWEEN_SAFETY_CHECKS
     CloudRendering: ENABLE_PLAYFABADMIN_API;ENABLE_PLAYFABSERVER_API;PANCAKE_MAX_ENABLE;PANCAKE_MULTIPLE_DEX;PANCAKE_ADS;PANCAKE_NOTIFICATION;PANCAKE_PLAYFAB
     EmbeddedLinux: ENABLE_PLAYFABADMIN_API;ENABLE_PLAYFABSERVER_API;PANCAKE_MAX_ENABLE;PANCAKE_MULTIPLE_DEX;PANCAKE_ADS;PANCAKE_NOTIFICATION;PANCAKE_PLAYFAB;PANCAKE_ADVERTISING
     GameCoreScarlett: ENABLE_PLAYFABADMIN_API;ENABLE_PLAYFABSERVER_API;PANCAKE_MAX_ENABLE;PANCAKE_MULTIPLE_DEX;PANCAKE_ADS;PANCAKE_NOTIFICATION;PANCAKE_PLAYFAB;PANCAKE_ADVERTISING
@@ -864,7 +864,7 @@ PlayerSettings:
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
-    Android: 0
+    Android: 1
   il2cppCompilerConfiguration: {}
   il2cppCodeGeneration: {}
   il2cppStacktraceInformation: {}

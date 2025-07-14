@@ -1,3 +1,3 @@
-public class TomatoItem : BaseItem
+public class TomatoItem : ItemResource
 {
 }

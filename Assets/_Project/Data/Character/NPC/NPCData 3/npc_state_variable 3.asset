@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 209dd424528ca7142929cf47d3f24ce8, type: 3}
+  m_Name: npc_state_variable 3
+  m_EditorClassIdentifier: 
+  description: 
+  valueDebug: 0
+  typeId: 0
+  guid: 0ff8237f07453c84181107f9b6b32a61
+  customId: 
+  initializeValue: 0
+  isSetData: 0
+  isSaveData: 0
+  isRaiseEvent: 0
+  currentValue: 0

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e252e4937ff7314487ca1e921c32cd2, type: 3}
+  m_Name: npc_data_1
+  m_EditorClassIdentifier: 
+  missionData: {fileID: 11400000, guid: 3d4229a648c7c0146ada6bed0fdab697, type: 2}
+  characterStateVariable: {fileID: 11400000, guid: f103dccf21f4a7a4cb188d62501e9ab8,
+    type: 2}
+  missionTypeVariable: {fileID: 11400000, guid: a6ac08e34c360534eb8cf16429c65e8f,
+    type: 2}
+  collectorItemData: {fileID: 11400000, guid: 1c409e523e87df94aac38c9ae64bab70, type: 2}
+  radiusCheckResourceSupplierVariable: {fileID: 11400000, guid: 60c3c7feca3818d468c5f9166ec367d9,
+    type: 2}
+  timeDelayCheckResourceSupplierVariable: {fileID: 11400000, guid: dc368849905807c469420ae58ad19b46,
+    type: 2}
+  radiusCheckResourceSellerVariable: {fileID: 11400000, guid: c2e51849b2400684b96a02e64d9776f0,
+    type: 2}
+  timeDelayCheckResourceSellerVariable: {fileID: 11400000, guid: 960a7fddfcab20145be72785a31099f7,
+    type: 2}
+  radiusCheckResourcePaymentVariable: {fileID: 11400000, guid: 28bd940bcc6b7b44a88a405d8b145b0f,
+    type: 2}
+  timeDelayCheckResourcePaymentVariable: {fileID: 11400000, guid: 20c6e003a2eb14144a957b3f3559a25c,
+    type: 2}
+  materials:
+  - {fileID: 2100000, guid: 558a80772286b43378c82201b7715070, type: 2}
+  - {fileID: 2100000, guid: cc56b86b1247a4d4d95ee88b1065dd2b, type: 2}
+  - {fileID: 2100000, guid: e1a36970ba82b48efaf2f624a3401a99, type: 2}
+  moveSpeedVariable: {fileID: 11400000, guid: 2a02f4ea47e8d0941a457f7a1b23ae30, type: 2}
+  moveMinDistaceVariable: {fileID: 11400000, guid: 00ad86754748b3f4fa0fc428e9894c71,
+    type: 2}
+  rotationSpeedVariable: {fileID: 11400000, guid: a53374831a94f464ba6dcec3b5c29c75,
+    type: 2}

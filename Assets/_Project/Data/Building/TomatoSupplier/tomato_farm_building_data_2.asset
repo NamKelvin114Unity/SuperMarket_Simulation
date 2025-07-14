@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67bd0b962db349441b2fd401ba154e59, type: 3}
+  m_Name: tomato_farm_building_data_2
+  m_EditorClassIdentifier: 
+  priceBuildingVariable: {fileID: 11400000, guid: 2f75948327192724085f4d25b560b708,
+    type: 2}
+  iconBuy: {fileID: 21300000, guid: 4f2ff114ec3fe44b88c05c08617a60c0, type: 3}
+  arrangeData: {fileID: 11400000, guid: aef19827f0b0e2b49b5a6c8941da5e46, type: 2}

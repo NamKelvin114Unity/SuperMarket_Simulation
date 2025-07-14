@@ -6,8 +6,8 @@ using VirtueSky.Component;
 public class CharacterMoveCarryState : State
 {
     public CharacterMoveCarryState(GameObject owner, StateMachine stateMachine,
-        HandleAnimancerComponent animancerComponent, AnimationClip animationClip)
-        : base(owner, stateMachine, animancerComponent, animationClip)
+        HandleAnimancerComponentCustom animancerComponentCustom, AnimationClip animationClip)
+        : base(owner, stateMachine, animancerComponentCustom, animationClip)
     {
     }
 

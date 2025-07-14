@@ -290,10 +290,10 @@ GameObject:
   - component: {fileID: 8823326045626285407}
   - component: {fileID: 2053545679228772703}
   - component: {fileID: 8153792358645695657}
-  - component: {fileID: 2983676252122361854}
   - component: {fileID: 7860265260156169081}
   - component: {fileID: 7383961535141666948}
   - component: {fileID: 104181718943927486}
+  - component: {fileID: 89521219100260376}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -424,24 +424,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 135edd0f8b1f6434ba17660f016063ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animancerComponent: {fileID: 2983676252122361854}
+  animancerComponentCustom: {fileID: 89521219100260376}
   idleAnim: {fileID: 7400000, guid: 5984e67b2ca744d5d94e9f04cbd2d46e, type: 2}
   animRun: {fileID: 7400000, guid: 358a8be7be38441d7bbb6b6f572698ea, type: 2}
   animCarryRun: {fileID: 7400000, guid: ad4855dccf5df4b7c9fe16b7f68c7500, type: 2}
   animCarryIdle: {fileID: 7400000, guid: f4c1818e6d969487fa4abe548d7500b8, type: 2}
---- !u!114 &2983676252122361854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 912851996016259152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b50203cff2b74e849a2fe7c6bb333776, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animancerComponent: {fileID: 2053545679228772703}
 --- !u!114 &7860265260156169081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -521,6 +508,19 @@ CapsuleCollider:
   m_Height: 2.3638167
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &89521219100260376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912851996016259152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec3829bf311547479feb435c2e47ac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animancerComponent: {fileID: 2053545679228772703}
 --- !u!1 &1147669956119853191
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,9 +4,10 @@ using VirtueSky.Component;
 
 public class CharacterMoveState : State
 {
-    public CharacterMoveState(GameObject owner, StateMachine stateMachine, HandleAnimancerComponent animancerComponent,
+    public CharacterMoveState(GameObject owner, StateMachine stateMachine,
+        HandleAnimancerComponentCustom animancerComponentCustom,
         AnimationClip animationClip)
-        : base(owner, stateMachine, animancerComponent, animationClip)
+        : base(owner, stateMachine, animancerComponentCustom, animationClip)
     {
     }
 

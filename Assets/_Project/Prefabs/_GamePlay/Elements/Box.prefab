@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3290414122619761423}
   - component: {fileID: 3432387340431667442}
   - component: {fileID: 2262746341039590041}
-  - component: {fileID: 3960462262411046296}
+  - component: {fileID: 1527214935743162299}
   m_Layer: 0
   m_Name: Box
   m_TagString: Untagged
@@ -55,7 +55,9 @@ MonoBehaviour:
   itemMoveTimeVariable: {fileID: 11400000, guid: 0acb9c42d897cf84a9c8c45e45b7dbc5,
     type: 2}
   itemType: 0
-  handleAnimancerComponent: {fileID: 3960462262411046296}
+  isUseAnimationMoveComplete: 0
+  handleAnimancerComponentCustom: {fileID: 1527214935743162299}
+  moveCompleteAnimationClip: {fileID: 0}
   idleAnimation: {fileID: 7400000, guid: eaa5c76955d8925439cfe19aa39986d0, type: 2}
   openAnimation: {fileID: 7400000, guid: cf6bad0b7c9e24346acbce130a0333a9, type: 2}
   closeAnimation: {fileID: 7400000, guid: 8ff25c0cfd1934845b22681a5f35c658, type: 2}
@@ -76,7 +78,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Animator: {fileID: 3051321756708011211}
   _ActionOnDisable: 0
---- !u!114 &3960462262411046296
+--- !u!114 &1527214935743162299
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,7 +87,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3666283116313271131}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b50203cff2b74e849a2fe7c6bb333776, type: 3}
+  m_Script: {fileID: 11500000, guid: fec3829bf311547479feb435c2e47ac9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animancerComponent: {fileID: 2262746341039590041}

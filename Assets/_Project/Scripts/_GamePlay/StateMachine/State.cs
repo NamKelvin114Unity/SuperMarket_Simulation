@@ -6,22 +6,22 @@ using VirtueSky.Component;
 public abstract class State
 {
     protected GameObject owner;
-    protected HandleAnimancerComponent animancerComponent;
+    protected HandleAnimancerComponentCustom AnimancerComponentCustom;
     protected AnimationClip animationClip;
     protected StateMachine stateMachine;
 
-    public State(GameObject owner, StateMachine stateMachine, HandleAnimancerComponent animancerComponent,
+    public State(GameObject owner, StateMachine stateMachine, HandleAnimancerComponentCustom animancerComponentCustom,
         AnimationClip animationClip)
     {
         this.owner = owner;
         this.stateMachine = stateMachine;
-        this.animancerComponent = animancerComponent;
+        this.AnimancerComponentCustom = animancerComponentCustom;
         this.animationClip = animationClip;
     }
 
     public virtual void Enter(Action complete)
     {
-        animancerComponent.PlayAnim(animationClip, complete, _durationFade: 0);
+        AnimancerComponentCustom.PlayAnim(animationClip, complete, _durationFade: 0);
     }
 
     public virtual void Exit()

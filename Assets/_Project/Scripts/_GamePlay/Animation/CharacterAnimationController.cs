@@ -12,29 +12,29 @@ public abstract class CharacterAnimationController : BaseAnimationController
 
     public void OnPlayIdleCarryAnim()
     {
-        stateMachine.ChangeState(new CharacterIdleCarryState(gameObject, stateMachine, animancerComponent,
+        stateMachine.ChangeState(new CharacterIdleCarryState(gameObject, stateMachine, animancerComponentCustom,
             animCarryIdle));
     }
 
     public void OnPlayRunCarryAnim()
     {
         stateMachine.ChangeState(
-            new CharacterMoveCarryState(gameObject, stateMachine, animancerComponent, animCarryRun));
+            new CharacterMoveCarryState(gameObject, stateMachine, animancerComponentCustom, animCarryRun));
     }
 
     public void OnPlayRunAnim()
     {
-        stateMachine.ChangeState(new CharacterMoveState(gameObject, stateMachine, animancerComponent, animRun));
+        stateMachine.ChangeState(new CharacterMoveState(gameObject, stateMachine, animancerComponentCustom, animRun));
     }
 
     public void OnPlayIdleAnim()
     {
-        stateMachine.ChangeState(new CharacterIdleState(gameObject, stateMachine, animancerComponent, idleAnim));
+        stateMachine.ChangeState(new CharacterIdleState(gameObject, stateMachine, animancerComponentCustom, idleAnim));
     }
 
     protected override void OnStartState()
     {
         base.OnStartState();
-        stateMachine.Initialize(new CharacterIdleState(gameObject, stateMachine, animancerComponent, idleAnim));
+        stateMachine.Initialize(new CharacterIdleState(gameObject, stateMachine, animancerComponentCustom, idleAnim));
     }
 }

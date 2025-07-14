@@ -23,17 +23,17 @@ public class HolderItem : ItemResource
 
     void PlayAnimOpen()
     {
-        handleAnimancerComponent.PlayAnim(openAnimation, _durationFade: 0, _endAnim: PlayAnimIdle);
+        handleAnimancerComponentCustom.PlayAnim(openAnimation, _durationFade: 0, _endAnim: PlayAnimIdle);
     }
 
     public void PlayAnimClose()
     {
-        handleAnimancerComponent.PlayAnim(closeAnimation);
+        handleAnimancerComponentCustom.PlayAnim(closeAnimation);
     }
 
     void PlayAnimIdle()
     {
-        handleAnimancerComponent.PlayAnim(idleAnimation);
+        handleAnimancerComponentCustom.PlayAnim(idleAnimation);
     }
 
     public ArrangeData ArrangeData => arrangeData;

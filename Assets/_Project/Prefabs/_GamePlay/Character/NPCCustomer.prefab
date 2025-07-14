@@ -718,13 +718,13 @@ GameObject:
   - component: {fileID: 7518152282155654437}
   - component: {fileID: 4694053243146225630}
   - component: {fileID: 3045076490578756474}
-  - component: {fileID: 2257928196188704219}
   - component: {fileID: 3985616116164669083}
   - component: {fileID: 1894599919404888063}
   - component: {fileID: 6687118504303081989}
   - component: {fileID: 225979199371033221}
   - component: {fileID: 7136599278500421952}
   - component: {fileID: 7457157707455684502}
+  - component: {fileID: 1241834318483592416}
   m_Layer: 10
   m_Name: NPCCustomer
   m_TagString: NPC
@@ -822,19 +822,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Animator: {fileID: 4920903861391299139}
   _ActionOnDisable: 0
---- !u!114 &2257928196188704219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4221836616355877493}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b50203cff2b74e849a2fe7c6bb333776, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animancerComponent: {fileID: 3045076490578756474}
 --- !u!136 &3985616116164669083
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -907,7 +894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3abd41015df67bb48a24eb163d1151ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animancerComponent: {fileID: 2257928196188704219}
+  animancerComponentCustom: {fileID: 1241834318483592416}
   idleAnim: {fileID: 7400000, guid: 5984e67b2ca744d5d94e9f04cbd2d46e, type: 2}
   animRun: {fileID: 7400000, guid: 358a8be7be38441d7bbb6b6f572698ea, type: 2}
   animCarryRun: {fileID: 7400000, guid: ad4855dccf5df4b7c9fe16b7f68c7500, type: 2}
@@ -984,6 +971,19 @@ CapsuleCollider:
   m_Height: 2.0507967
   m_Direction: 1
   m_Center: {x: 0, y: 0.98431695, z: 0}
+--- !u!114 &1241834318483592416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4221836616355877493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec3829bf311547479feb435c2e47ac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animancerComponent: {fileID: 3045076490578756474}
 --- !u!1 &4451648741877039138
 GameObject:
   m_ObjectHideFlags: 0

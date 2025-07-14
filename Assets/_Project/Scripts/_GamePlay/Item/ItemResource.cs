@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using PrimeTween;
 using UnityEngine;
+using UnityEngine.Serialization;
 using VirtueSky.Component;
 using VirtueSky.Inspector;
 using VirtueSky.ObjectPooling;
@@ -16,7 +17,9 @@ public abstract class ItemResource : MonoBehaviour
     [SerializeField] protected FloatVariable itemMoveTimeVariable;
     [SerializeField] protected EItemType itemType;
     [SerializeField] protected bool isUseAnimationMoveComplete;
-    [SerializeField] protected HandleAnimancerComponent handleAnimancerComponent;
+
+    [FormerlySerializedAs("handleAnimancerComponent")] [SerializeField]
+    protected HandleAnimancerComponentCustom handleAnimancerComponentCustom;
 
     [ShowIf(nameof(isUseAnimationMoveComplete))] [SerializeField]
     protected AnimationClip moveCompleteAnimationClip;
@@ -63,7 +66,7 @@ public abstract class ItemResource : MonoBehaviour
     {
         if (isPlayAnimDoneMove && isUseAnimationMoveComplete)
         {
-            handleAnimancerComponent.PlayAnim(moveCompleteAnimationClip, _durationFade: 0);
+            handleAnimancerComponentCustom.PlayAnim(moveCompleteAnimationClip, _durationFade: 0);
         }
     }
 

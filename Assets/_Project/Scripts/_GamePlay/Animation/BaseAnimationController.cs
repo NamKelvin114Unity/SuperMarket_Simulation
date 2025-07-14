@@ -1,12 +1,11 @@
-using System;
-using Animancer;
 using UnityEngine;
-using VirtueSky.Component;
+using UnityEngine.Serialization;
 using VirtueSky.Inspector;
 
 public abstract class BaseAnimationController : MonoBehaviour
 {
-    [HeaderLine("Core")] [SerializeField] protected HandleAnimancerComponent animancerComponent;
+    [FormerlySerializedAs("animancerComponent")] [HeaderLine("Core")] [SerializeField]
+    protected HandleAnimancerComponentCustom animancerComponentCustom;
 
     [SerializeField] protected AnimationClip idleAnim;
     protected StateMachine stateMachine;

@@ -67,7 +67,7 @@ GameObject:
   - component: {fileID: 313206464254092023}
   - component: {fileID: 2987685576508241494}
   - component: {fileID: 3200185406220461274}
-  - component: {fileID: 5069320850724998925}
+  - component: {fileID: 6109697768562890598}
   m_Layer: 0
   m_Name: Tomato
   m_TagString: Untagged
@@ -111,7 +111,7 @@ MonoBehaviour:
     type: 2}
   itemType: 1
   isUseAnimationMoveComplete: 1
-  handleAnimancerComponent: {fileID: 5069320850724998925}
+  handleAnimancerComponentCustom: {fileID: 6109697768562890598}
   moveCompleteAnimationClip: {fileID: 7400000, guid: a91cbcebe184eb24889a015f89db197f,
     type: 2}
 --- !u!65 &2987685576508241494
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Animator: {fileID: 7584912070252634769}
   _ActionOnDisable: 0
---- !u!114 &5069320850724998925
+--- !u!114 &6109697768562890598
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5877561647526410911}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b50203cff2b74e849a2fe7c6bb333776, type: 3}
+  m_Script: {fileID: 11500000, guid: fec3829bf311547479feb435c2e47ac9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animancerComponent: {fileID: 3200185406220461274}

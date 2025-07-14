@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 
 [Serializable]
-public class PoolData
+public class PoolDataCustom
 {
     public GameObject prefab;
     public int count;

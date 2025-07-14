@@ -17,7 +17,7 @@ public static class PoolCustom
 
     #region API Spawn
 
-    public static void PreSpawnCustom(this PoolData poolData)
+    public static void PreSpawnCustom(this PoolDataCustom poolDataCustom)
     {
         if (_poolHandle == null)
         {
@@ -25,7 +25,7 @@ public static class PoolCustom
             return;
         }
 
-        _poolHandle.PreSpawn(poolData);
+        _poolHandle.PreSpawn(poolDataCustom);
     }
 
     public static GameObject SpawnCustom(this GameObject prefab, Transform parent = null,

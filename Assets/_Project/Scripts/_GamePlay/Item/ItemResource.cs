@@ -49,7 +49,7 @@ public abstract class ItemResource : MonoBehaviour
             }
         }
 
-        if (gameObject.GetComponent<PooledObjectId>())
+        if (gameObject.GetComponent<PooledObjectIdCustom>())
         {
             gameObject.DeSpawnCustom();
         }

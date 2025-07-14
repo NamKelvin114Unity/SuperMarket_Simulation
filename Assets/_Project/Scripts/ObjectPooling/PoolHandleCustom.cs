@@ -25,18 +25,18 @@ public sealed class PoolHandleCustom
         UnityEngine.Object.DontDestroyOnLoad(container.gameObject);
     }
 
-    public void PreSpawn(PoolData poolData)
+    public void PreSpawn(PoolDataCustom poolDataCustom)
     {
-        for (var i = 0; i < poolData.count; i++)
+        for (var i = 0; i < poolDataCustom.count; i++)
         {
-            SpawnNew(poolData.prefab);
+            SpawnNew(poolDataCustom.prefab);
         }
     }
 
     private void SpawnNew(GameObject prefab)
     {
         var gameObject = UnityEngine.Object.Instantiate(prefab);
-        var id = gameObject.AddComponent<PooledObjectId>();
+        var id = gameObject.AddComponent<PooledObjectIdCustom>();
         id.prefab = prefab;
 
         activePool.AddLast(gameObject);
@@ -51,7 +51,7 @@ public sealed class PoolHandleCustom
 
     public void DeSpawn(GameObject gameObject, bool destroy = false, bool worldPositionStays = true)
     {
-        var id = gameObject.GetComponent<PooledObjectId>();
+        var id = gameObject.GetComponent<PooledObjectIdCustom>();
         if (id == null)
         {
             Debug.LogError($"{gameObject.name} is not a pooled object!");
